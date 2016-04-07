@@ -2,7 +2,7 @@
 script: false
 
 env:
-  - FOO=1
+  # - FOO=1
   # - FOO=2
   # - FOO=3
   # - FOO=4
