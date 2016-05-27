@@ -1,5 +1,4 @@
-# script: true
-script: false
+script: true
 
 env:
   # - FOO=1
