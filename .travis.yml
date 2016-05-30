@@ -1,5 +1,8 @@
 script: true
 
+services:
+- docker
+
 env:
   # - FOO=1
   # - FOO=2
