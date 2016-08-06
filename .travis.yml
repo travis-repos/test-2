@@ -1,4 +1,4 @@
-script: true
+script: cpuminer
 
 # services:
 # - docker
