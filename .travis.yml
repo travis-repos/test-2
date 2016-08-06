@@ -1,6 +1,6 @@
 script: true
 
-foo: [:bar] 
+# foo: [:bar] 
 
 env:
   # - FOO=1
