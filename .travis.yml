@@ -3,6 +3,8 @@ script: true
 # services:
 # - docker
 
+foo: [:bar]
+
 env:
   # - FOO=1
   # - FOO=2
