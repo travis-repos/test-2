@@ -1,8 +1,5 @@
 script: true
 
-# services:
-# - docker
-
 foo: [:bar]
 
 env:
