@@ -1,4 +1,1 @@
 script: true
-env:
-  - FOO=foo
-  - BAR=bar
