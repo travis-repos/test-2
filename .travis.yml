@@ -1,2 +1,2 @@
 script: true
-after_finish: /usr/bin/false
+after_success: /usr/bin/false
