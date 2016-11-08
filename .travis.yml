@@ -1,2 +1,2 @@
 # sudo: false
-script: true
+script: sleep 5
