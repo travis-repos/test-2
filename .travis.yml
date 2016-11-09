@@ -1,3 +1,5 @@
 sudo: false
 dist: trusty
 script: sleep 5
+notifications:
+  email: false
