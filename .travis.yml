@@ -1,7 +1,6 @@
 # wa{t::kaputt?^%!??
 
 sudo: false
-dist: precise
 script: sleep 5
 notifications:
   email: false
