@@ -4,3 +4,7 @@ sudo: false
 script: sleep 5
 notifications:
   email: false
+env:
+  - FOO=1
+  - FOO=2
+  - FOO=3
