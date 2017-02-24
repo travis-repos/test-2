@@ -1,6 +1,6 @@
 # wa{t::kaputt?^%!??
 
-sudo: false
+# sudo: false
 script: sleep 5
 notifications:
   email: false
