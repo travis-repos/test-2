@@ -1,10 +1,12 @@
-# wa{t::kaputt?^%!??
-
-# sudo: false
 script: true
 notifications:
   email: false
-env:
-  - FOO=1
-  - FOO=2
-  - FOO=3
+
+matrix:
+  include:
+    - stage: one
+      script: echo "First job on stage one!"
+    - stage: one
+      script: echo "Second job on stage one!"
+    - stage: two
+      script: echo "First job on stage two!"
