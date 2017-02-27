@@ -1,7 +1,7 @@
 # wa{t::kaputt?^%!??
 
 # sudo: false
-script: sleep 5
+script: true
 notifications:
   email: false
 env:
