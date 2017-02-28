@@ -5,8 +5,8 @@ notifications:
 matrix:
   include:
     - stage: one
-      script: bin/true
+      script: /bin/true
     - stage: one
-      script: bin/false
+      script: /bin/false
     - stage: two
-      script: bin/true
+      script: /bin/true
