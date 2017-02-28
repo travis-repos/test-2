@@ -7,6 +7,12 @@ matrix:
     - stage: one
       script: /bin/true
     - stage: one
-      script: /bin/false
+      script: /bin/true
     - stage: two
+      script: /bin/true
+    - stage: two
+      script: /bin/false
+    - stage: three
+      script: /bin/true
+    - stage: three
       script: /bin/true
