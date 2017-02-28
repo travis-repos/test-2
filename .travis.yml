@@ -10,3 +10,9 @@ matrix:
       script: /bin/true
     - stage: two
       script: /bin/true
+    - stage: two
+      script: /bin/true
+    - stage: three
+      script: /bin/true
+    - stage: three
+      script: /bin/true
