@@ -5,8 +5,8 @@ notifications:
 matrix:
   include:
     - stage: one
-      script: echo "First job on stage one!"
+      script: bin/true
     - stage: one
-      script: echo "Second job on stage one!"
+      script: bin/false
     - stage: two
-      script: echo "First job on stage two!"
+      script: bin/true
