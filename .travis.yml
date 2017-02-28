@@ -1,4 +1,3 @@
-sudo: required
 script: true
 notifications:
   email: false
