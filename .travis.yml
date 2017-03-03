@@ -1,10 +1,6 @@
 # wa{t::kaputt?^%!??
 
-# sudo: false
+sudo: required
 script: true
 notifications:
   email: false
-env:
-  - FOO=1
-  - FOO=2
-  - FOO=3
