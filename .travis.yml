@@ -1,7 +1,7 @@
 # wa{t::kaputt?^%!??
 
 # sudo: false
-language: osx
+os: osx
 script: true
 notifications:
   email: false
