@@ -1,6 +1,8 @@
 # wa{t::kaputt?^%!??
 
 # sudo: false
-script: true
+script: 
+- set +x
+- true
 notifications:
   email: false
