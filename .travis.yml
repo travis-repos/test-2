@@ -3,6 +3,9 @@
 # sudo: false
 script: 
 - set +x
+- echo 1
+- echo 2
+- echo 3
 - true
 notifications:
   email: false
