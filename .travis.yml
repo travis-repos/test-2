@@ -1,11 +1,12 @@
 # wa{t::kaputt?^%!??
 
 # sudo: false
-script: 
-- set +x
-- echo 1
-- echo 2
-- echo 3
-- true
+script: true
 notifications:
   email: false
+env:
+  - FOO=1
+  - FOO=2
+  - FOO=3
+  - FOO=4
+  - FOO=5
