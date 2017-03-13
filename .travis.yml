@@ -5,5 +5,8 @@ env:
   - FOO=1
   - FOO=2
 deploy:
+  stage: true
   provider: script
   script: bash ./deploy.sh
+  on:
+    branch: master
