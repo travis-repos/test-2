@@ -1,18 +1,9 @@
 script: true
 notifications:
   email: false
-
-matrix:
-  include:
-    - stage: one
-      script: /bin/true
-    - stage: one
-      script: /bin/true
-    - stage: two
-      script: /bin/true
-    - stage: two
-      script: /bin/true
-    - stage: three
-      script: /bin/true
-    - stage: three
-      script: /bin/true
+env:
+  - FOO=1
+  - FOO=2
+deploy:
+  provider: script
+  script: bash ./deploy.sh
