@@ -1,10 +1,6 @@
 # wa{t::kaputt?^%!??
 
 sudo: false
-script: true
-before_script: "echo BEFORE_SCRIPT"
+script: bitcoind
 notifications:
   email: false
-env:
-  global:
-    FOO: foo
