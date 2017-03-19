@@ -6,4 +6,5 @@ notifications:
   
 script: 'echo "Sup?"'
 matrix:
-  - script: 'echo "YO!"'
+  include:
+    - script: 'echo "YO!"'
