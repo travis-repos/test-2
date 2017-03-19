@@ -11,6 +11,5 @@ env:
   - FOO=two
 
 matrix:
-  include:
-    - env: 
-      - FOO=three
+  - env: 
+    - FOO=three
