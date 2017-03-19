@@ -1,2 +1,6 @@
-# sudo: false
+# wa{t::kaputt?^%!??
+
+sudo: false
 script: true
+notifications:
+  email: false
