@@ -1,6 +1,9 @@
 # wa{t::kaputt?^%!??
 
 sudo: false
-script: true
 notifications:
   email: false
+  
+script: 'echo "Sup?"'
+matrix:
+  - script: 'echo "YO!"'
