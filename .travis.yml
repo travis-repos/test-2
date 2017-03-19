@@ -4,7 +4,13 @@ sudo: false
 notifications:
   email: false
   
-script: 'echo "Sup?"'
+script: 'echo "Sup? $FOO"'
+
+env:
+  - FOO=one
+  - FOO=two
+
 matrix:
   include:
-    - script: 'echo "YO!"'
+    - env: 
+      - FOO=three
