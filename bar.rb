@@ -1,1 +1,1 @@
-
+#!/usr/local/env ruby
