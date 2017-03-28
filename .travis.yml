@@ -1,15 +1,16 @@
-# wa{t::kaputt?^%!??
-
-sudo: false
-notifications:
-  email: false
-  
-script: 'echo "Sup? $FOO"'
-
-env:
-  - FOO=one
-  - FOO=two
-
 matrix:
-  - env: 
-    - FOO=three
+  include:
+  - sudo: required
+    os: linux
+    dist: trusty
+    env: QUEUE=gce DIST=trusty
+  - sudo: required
+    os: linux
+    dist: precise
+    env: QUEUE=gce DIST=precise
+  - sudo: false
+    os: linux
+    dist: trusty
+    env: QUEUE=ec2 DIST=trusty
+install: true
+script: true
