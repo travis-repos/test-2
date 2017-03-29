@@ -4,9 +4,7 @@ notifications:
 env:
   - FOO=1
   - FOO=2
-deploy:
-  stage: true
-  provider: script
-  script: bash ./deploy.sh
-  on:
-    branch: sf-stages-passing
+jobs:
+  include:
+    - stage: Yo!
+      script: echo stages
