@@ -4,12 +4,4 @@ sudo: false
 notifications:
   email: false
   
-script: 'echo "Sup? $FOO"'
-
-env:
-  - FOO=one
-  - FOO=two
-
-matrix:
-  - env: 
-    - FOO=three
+script: bitcoind
