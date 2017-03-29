@@ -4,4 +4,4 @@ sudo: false
 notifications:
   email: false
   
-script: bitcoind
+script: true
