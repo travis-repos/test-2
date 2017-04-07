@@ -4,4 +4,6 @@ sudo: false
 notifications:
   email: false
 
-script: "env | grep TRAVIS_"
+script:
+  - "env | grep TRAVIS_"
+  - cat /.job-board-register.yml
