@@ -3,5 +3,5 @@
 sudo: false
 notifications:
   email: false
-  
-script: true
+
+script: "env | grep TRAVIS_"
