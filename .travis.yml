@@ -4,6 +4,28 @@ sudo: false
 notifications:
   email: false
 
-script:
-  - "env | grep TRAVIS_"
-  - cat /.job-board-register.yml
+jobs:
+  include:
+    - stage: Unit tests
+      script: echo One
+    - stage: Unit tests
+      script: echo Two
+    - stage: Deploy to staging
+      script: /bin/true
+      deploy: &heroku
+        provider: heroku
+        app: sf-stages-staging
+        api_key: $HEROKU_AUTH_TOKEN
+        on: sf-stages-demo
+    - stage: Test staging
+      script: 'curl http://sf-stages-staging.herokuapp.com'
+    - stage: Deploy to production
+      script: /bin/true
+      deploy:
+        <<: *heroku
+        app: sf-stages-production
+    - stage: Test production
+      script: 'curl http://sf-stages-production.herokuapp.com'
+
+
+
