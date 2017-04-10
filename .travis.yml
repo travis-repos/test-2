@@ -11,7 +11,7 @@ jobs:
     - stage: Unit tests
       script: echo Two
     - stage: Deploy to staging
-      script: /bin/true
+      script: skip
       deploy: &heroku
         provider: heroku
         app: sf-stages-staging
