@@ -4,28 +4,23 @@ sudo: false
 notifications:
   email: false
 
+env:
+  - FOO=foo
+  - FOO=bar
+
+script: echo $FOO
+
+stages:
+  - Compile
+  - Test
+  - Deploy
+
 jobs:
   include:
-    - stage: Unit tests
-      script: echo One
-    - stage: Unit tests
-      script: echo Two
-    - stage: Deploy to staging
-      script: skip
-      deploy: &heroku
-        provider: heroku
-        app: sf-stages-staging
-        api_key: $HEROKU_AUTH_TOKEN
-        on: sf-stages-demo
-    - stage: Test staging
-      script: 'curl http://sf-stages-staging.herokuapp.com'
-    - stage: Deploy to production
-      script: /bin/true
+    - stage: Compile
+      script: echo Compile
+    - stage: Deploy
+      script: true
       deploy:
         <<: *heroku
         app: sf-stages-production
-    - stage: Test production
-      script: 'curl http://sf-stages-production.herokuapp.com'
-
-
-
