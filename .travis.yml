@@ -20,7 +20,4 @@ jobs:
     - stage: Compile
       script: echo Compile
     - stage: Deploy
-      script: true
-      deploy:
-        <<: *heroku
-        app: sf-stages-production
+      script: echo Deploy
