@@ -19,11 +19,9 @@ jobs:
   include:
     - stage: Compile
       script: echo Compile
-      env:
+      env: &env
         - FOO=
         - BAR=
     - stage: Deploy
       script: echo Deploy
-      env:
-        - FOO=
-        - BAR=
+      <<: *env
