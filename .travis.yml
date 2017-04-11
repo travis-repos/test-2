@@ -6,4 +6,7 @@ notifications:
 
 script:
   - "env | grep TRAVIS_"
-  - cat /.job-board-register.yml
+
+branches:
+  only:
+    - master
