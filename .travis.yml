@@ -6,7 +6,3 @@ notifications:
 
 script:
   - "env | grep TRAVIS_"
-
-branches:
-  only:
-    - master
