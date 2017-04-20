@@ -4,5 +4,13 @@ sudo: false
 notifications:
   email: false
 
+mysql-server
+
+addons:
+  apt:
+    packages:
+      - mysql-5.7-trusty
+
 script:
-  - "env | grep TRAVIS_"
+  - mysql --version || true
+  - dpkg -l 'mysql-server*' || true
