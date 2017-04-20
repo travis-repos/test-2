@@ -7,7 +7,7 @@ notifications:
 addons:
   apt:
     packages:
-      - "mysql-5.7-trusty"
+      - "mysql-server"
 
 script:
   - "mysql --version || true"
