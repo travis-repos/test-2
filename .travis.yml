@@ -1,13 +1,14 @@
-# wa{t::kaputt?^%!??
-
 sudo: false
+
 notifications:
   email: false
 
 addons:
   apt:
+    sources:
+      - mysql-5.7-trusty
     packages:
-      - "mysql-server"
+      - mysql-server      
 
 script:
   - "mysql --version || true"
