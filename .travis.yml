@@ -4,13 +4,11 @@ sudo: false
 notifications:
   email: false
 
-mysql-server
-
 addons:
   apt:
     packages:
-      - mysql-5.7-trusty
+      - "mysql-5.7-trusty"
 
 script:
-  - mysql --version || true
-  - dpkg -l 'mysql-server*' || true
+  - "mysql --version || true"
+  - "dpkg -l 'mysql-server*' || true"
