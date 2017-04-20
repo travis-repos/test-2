@@ -1,8 +1,13 @@
-# wa{t::kaputt?^%!??
-
 sudo: false
 notifications:
   email: false
 
-script:
-  - "env | grep TRAVIS_"
+jobs:
+  include:
+    - stage: precache
+      script: true
+    - stage: test
+      script: bundle show
+    - stage: test
+      script: bundle show
+      
