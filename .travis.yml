@@ -1,12 +1,16 @@
-# wa{t::kaputt?^%!??
-
 sudo: false
+dist: trusty
+
 notifications:
   email: false
 
-script:
-  - "env | grep TRAVIS_"
+addons:
+  apt:
+    sources:
+      - mysql-5.7-trusty
+    packages:
+      - mysql-server      
 
-branches:
-  only:
-    - master
+script:
+  - "mysql --version || true"
+  - "dpkg -l 'mysql-server*' || true"
