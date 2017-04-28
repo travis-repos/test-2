@@ -1,15 +1,7 @@
 sudo: false
 dist: trusty
-# notifications:
-#   slack:
-#     secure: PgIemcFeYBEkWOKztHfeRlAaucKVj2PbWU5IvEp0FuzlqNUIiEYl9CIi2BPIF5YCoylal8a/q+L0zMB715xiQ3bG7X/yIHKal0mO7ZqNd6+BicyeVYWaix9EtKMaudOBIMo9P+Znxu03wjcNcELsKEGMWAnlZURlFlYvax5KqitxqiNGQy0zVv+fJz6P9ZgYaiG5mEj9v9oYbN6Toy4McrUnhE0vbofB1s4S6nbsZuTaGx+JpV0OhjT5MCv/FX0w4dUrZ/nilQtU8LM0VZSaE3mjSXqakIxic+oDhfIf1yKI0eKJNEELnG7hL7lxzRFDp7O2FbwRzX7lQeFYwK6PL6kkrqTQttKx5cW7Ykks9zob5k483VptRHX//H2DGHJ0lmNOhpvUPz35zR+CjGQwrcUXl+AahambqIbqlmhoecbnKUmixpBCyUuvsnbqhPckFqxS/6emeF5Vh/Jv3+RZ+4i9jGsnAEKgpDg0apZ6FvkkXsz9/ACzGtql6iTHjCTU7Dl8ngftjj0xjoTeKtElC5MMsgbmKLD4APZQYgfjQEcjl37RiV3DVaeSqbuGQ88FLJHWlP8wnZ6hwPR8OtK0lQznAwExKxRxyWfnhIITIHzBsvhM5LryYhqGDIUHWBtXvbRiFaXFncOKKOyffxbMNZQ6dmFHwvWspJCIILBPLh8=
-addons:
-  apt:
-    sources:
-    - mysql-5.7-trusty
-    packages:
-    - mysql-server
-script:
-- mysql --version || true
-- dpkg -l 'mysql-server*' || true
-- false
+  
+script: true
+
+notifications:
+  email: false
