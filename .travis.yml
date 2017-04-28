@@ -2,7 +2,7 @@ sudo: false
 dist: trusty
 
 notifications:
-  email: false
+  # email: false
 
 addons:
   apt:
@@ -14,3 +14,4 @@ addons:
 script:
   - "mysql --version || true"
   - "dpkg -l 'mysql-server*' || true"
+  - false
