@@ -1,6 +1,6 @@
-# wa{t::kaputt?^%!??
-
 sudo: false
+dist: trusty
+
 notifications:
   email: false
 
