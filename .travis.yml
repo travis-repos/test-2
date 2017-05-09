@@ -6,21 +6,6 @@ notifications:
 
 jobs:
   include:
-    - stage: unit tests
-      script: echo one
-    - stage: unit tests
-      script: echo two
-    - stage: deploy to staging
-      script: skip
-      deploy: &heroku
-        provider: heroku
-        app: sf-stages-staging
-        api_key: $HEROKU_AUTH_TOKEN
-        on: sf-stages-demo
-    - stage: test staging
-      script: 'curl http://sf-stages-staging.herokuapp.com'
-jobs:
-  include:
     - script: echo 1
     - script: echo 2
     - stage: deploy
