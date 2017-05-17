@@ -1,7 +1,7 @@
 sudo: false
 dist: trusty
   
-script: true
+script: echo $SECRET
 
 notifications:
   email: false
