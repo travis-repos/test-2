@@ -2,7 +2,7 @@ sudo: false
 dist: trusty
   
 script: 
-  - echo $SECRET
+  - echo $SECRET_1
   - echo $SECRET_2
 
 notifications:
