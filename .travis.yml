@@ -1,7 +1,9 @@
 sudo: false
 dist: trusty
   
-script: echo $SECRET
+script: 
+  - echo $SECRET
+  - echo $SECRET_2
 
 notifications:
   email: false
