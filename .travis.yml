@@ -6,13 +6,45 @@ notifications:
 
 jobs:
   include:
-    - script: echo 1
-    - script: echo 2
-    - stage: deploy
-      script: skip
-      deploy: &heroku
-        provider: heroku
-        app: sf-stages-staging
-        api_key: $HEROKU_AUTH_TOKEN
-        on: sf-stages-demo
-    - script: echo 3
+    - script: true
+      stage: one
+    - script: true
+      stage: two
+    - script: true
+      stage: three
+    - script: true
+      stage: four
+    - script: true
+      stage: five
+    - script: true
+      stage: six
+    - script: true
+      stage: seven
+    - script: true
+      stage: eight
+    - script: true
+      stage: nine
+    - script: true
+      stage: ten
+    - script: true
+      stage: eleven
+    - script: true
+      stage: twelve
+    - script: true
+      stage: thirteen
+    - script: true
+      stage: fourteen
+    - script: true
+      stage: fifteen
+    - script: true
+      stage: sixteen
+    - script: true
+      stage: seventeen
+    - script: true
+      stage: eighteen
+    - script: true
+      stage: nineteen
+    - script: true
+      stage: twenty
+    - script: true
+      stage: twentyone
