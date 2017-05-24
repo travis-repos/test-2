@@ -1,9 +1,12 @@
+dist: trusty
+sudo: false
+
 notifications:
   email: false
 
 jobs:
   include:
-    - script: true
+    - script: false
       dist: trusty
       rvm: 2.3
       stage: one
