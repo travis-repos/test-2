@@ -1,47 +1,18 @@
+dist: trusty
+sudo: false
+
 notifications: 
   email: false
  
 jobs:
   include:
     - script: true
+      rvm: 2.3
+      stage: one
+    - script: true
+      rvm: 2.4
       stage: one
     - script: true
       stage: two
-    - script: true
-      stage: three
-    - script: true
-      stage: four
-    - script: true
-      stage: five
-    - script: true
-      stage: six
-    - script: true
-      stage: seven
-    - script: true
-      stage: eight
-    - script: true
-      stage: nine
-    - script: true
-      stage: ten
-    - script: true
-      stage: eleven
-    - script: true
-      stage: twelve
-    - script: true
-      stage: thirteen
-    - script: true
-      stage: fourteen
-    - script: true
-      stage: fifteen
-    - script: true
-      stage: sixteen
-    - script: true
-      stage: seventeen
-    - script: true
-      stage: eighteen
-    - script: true
-      stage: nineteen
-    - script: true
-      stage: twenty
-    - script: true
-      stage: twentyone
+  allow_failures:
+    - rvm: 2.3
