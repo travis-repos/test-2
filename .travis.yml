@@ -1,8 +1,6 @@
 notifications: 
   email: false
  
-script: true
-
 jobs:
   include:
     - script: true
