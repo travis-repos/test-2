@@ -1,9 +1,13 @@
-sudo: false
-dist: trusty
-  
-script: 
-  - echo $SECRET_1
-  - echo $SECRET_2
+language: ruby
 
 notifications:
   email: false
+
+jobs:
+  include:
+    - os: linux
+      dist: trusty
+      script: true
+    - os: osx
+      script: true
+       
