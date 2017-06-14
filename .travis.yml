@@ -2,7 +2,10 @@ sudo: false
 dist: trusty
 # os: osx
 
-script: bash ./wat
+script: 
+    - echo $SECRET_1
+    - echo $SECRET_2
+    - bash ./wat
 
 notifications:
     email: false
