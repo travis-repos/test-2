@@ -1,13 +1,8 @@
-language: ruby
+sudo: false
+dist: trusty
+# os: osx
+
+script: bash ./wat
 
 notifications:
-  email: false
-
-jobs:
-  include:
-    - os: linux
-      dist: trusty
-      script: true
-    - os: osx
-      script: true
-       
+    email: false
