@@ -8,4 +8,4 @@ script:
     - bash ./wat
 
 notifications:
-    email: false
+    email: always
