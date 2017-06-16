@@ -6,7 +6,6 @@ script:
     - echo $SECRET_1
     - echo $SECRET_2
     - bash ./wat
-    - false
 
 notifications:
-    email: true
+    email: false
