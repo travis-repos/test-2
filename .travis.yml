@@ -9,3 +9,4 @@ script:
 
 notifications:
     email: false
+    webhook: https://requestb.in/19c85fe1
