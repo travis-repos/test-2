@@ -1,13 +1,10 @@
 sudo: false
 dist: trusty
-# os: osx
-
-script: 
-    - echo $SECRET_1
-    - echo $SECRET_2
-    - bash ./wat
-
+script:
+- echo $SECRET_1
+- echo $SECRET_2
+- bash ./wat
 notifications:
   email: false
   slack:
-    secure: btlf2qSRkCl7qQw+Z9ORkmQjou6TS13cNqZMF+gO+i439+aHy5ffIFEvKZjUMD/XKNtMM3trn4oI4vV0UkWrWoqHIYsIq9EVXuJ/2HoeHtud6scWml0+or04tyE+rcz2DqeWOzGUZnciKWEOO9BxLGZH6kzmsDAOuvFqTJtuJ2b1WX7BzIA/9c/AwoUqh2CYt3ax7CT6VRoJnIzxTYHNadKJcjR4+Y4cbFDxteW5QuJJBdxyFiy11L7a9MS6WaE+resqdkjHyacgA0ICPyZCBm6Gr81DC8tiBZjrVVbB/wT0aCpZLaUuwyDbBSNpKFYcr15YjZkJgHtJ8q34gSWr//iqmCpL7s3h1jNzid9OVw/GXzxTvZYljUkEHv6boqc4qSV8eoncvgAXOa4J4d8ltvUj8rQriLXoc4ukkSm2HyPSFSYvRn+xKp0zIRU2tj6H/nKSPSENN1X9j49Fj324RVq4+GrnKlYS2i0JC0lFJtmrFW4A4Z0p3AG68zoBFOpQqIbH5fnTyFPkux+kH4qcAX8BSu/4t3D3bxdm8Yr5tfCAPwcupItfgzJZD8jAYGlxlVjRxakKmcCVVGB/C9lWDcTyujd9R4W7WGrL9RIOXfSHCStymCNeHPjRrbeCO8QdomZpKlJMAFbsv+gk/rx/Zsd14qk//fyB98O70d25jak=
+    secure: V0PdtRPGFyEi2w02WoQNmCVap13VVFuDGqQTYD2b69YAr8AmCqb8AWTdlr85/5HFLg+rl85MZCoFuqtkr40Pa/whCGjxmF6/UMo8S3kDFK/pRGHPbV+xLZ8BJAfiL7HsdajpHnUwkflFxpk9Ze4DW191arf5JL6eF7Y5oR9LWPErXPkz4S/BVp2oTqkNgG93D6JiVlC6l87jRQsghhY2Rv8eWzPY6WTI0gqNkl5EZgaOypZ9dAcFECstPRBbD56+cB6oABvhE9UWBqi34O9MJsMwJOdpxnhbegw0PTmav07sFPdYQ7jdzniSqVAt936rfdgiaS0ISqWSLpC+Tk1hj1S8WyxB+fCw+DV++NEuyjYQWXY6Zs3+xXUKs6dDHKaq2hGA7jteZqBMK9z84/tl+6ncS2X6Tu2hJ/ICTmsEQ5UPEJDCtTzYzu3E5VFPdlFh0uIPUk6iOGDa4FLwAKKclyDX9PxPSlvi+teZ+kUjrOm2dCjGKFZwT5ACbaGT12QmFP9iaPbwxM7ElecKCoseBpdCvChxpmELGpN1CkO5uX4AUZyLdlbvPiLBeUzxbr4kC78J33e61kcT4i5kWDzv7BljdJxodMHA6v6R7ILbwUmMsxQlm6y5Ue7DJ2EnauUooEQ9MPNaYHK5WztgmJwvUVEgvhiigvOeYR+S2qjojbI=
