@@ -8,6 +8,8 @@ notifications:
   email: false
   webhooks:
   - https://requestb.in/r1yf2zr1
+  irc:
+  - "chat.freenode.net#travisstaging"
   slack:
     rooms:
       - secure: V0PdtRPGFyEi2w02WoQNmCVap13VVFuDGqQTYD2b69YAr8AmCqb8AWTdlr85/5HFLg+rl85MZCoFuqtkr40Pa/whCGjxmF6/UMo8S3kDFK/pRGHPbV+xLZ8BJAfiL7HsdajpHnUwkflFxpk9Ze4DW191arf5JL6eF7Y5oR9LWPErXPkz4S/BVp2oTqkNgG93D6JiVlC6l87jRQsghhY2Rv8eWzPY6WTI0gqNkl5EZgaOypZ9dAcFECstPRBbD56+cB6oABvhE9UWBqi34O9MJsMwJOdpxnhbegw0PTmav07sFPdYQ7jdzniSqVAt936rfdgiaS0ISqWSLpC+Tk1hj1S8WyxB+fCw+DV++NEuyjYQWXY6Zs3+xXUKs6dDHKaq2hGA7jteZqBMK9z84/tl+6ncS2X6Tu2hJ/ICTmsEQ5UPEJDCtTzYzu3E5VFPdlFh0uIPUk6iOGDa4FLwAKKclyDX9PxPSlvi+teZ+kUjrOm2dCjGKFZwT5ACbaGT12QmFP9iaPbwxM7ElecKCoseBpdCvChxpmELGpN1CkO5uX4AUZyLdlbvPiLBeUzxbr4kC78J33e61kcT4i5kWDzv7BljdJxodMHA6v6R7ILbwUmMsxQlm6y5Ue7DJ2EnauUooEQ9MPNaYHK5WztgmJwvUVEgvhiigvOeYR+S2qjojbI=
