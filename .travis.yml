@@ -6,3 +6,5 @@ script:
 - bash ./wat
 notifications:
   email: false
+  webhooks:
+    - https://requestb.in/1dtr5zj1
