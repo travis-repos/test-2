@@ -16,9 +16,9 @@ matrix:
       script: echo "yarn test:report"
     - env:
         TEST_TYPE: integration
-      script: echo "yarn test:integration"
+      script: bin/false
     - stage: deploy
-      script: /bin/false
+      script: echo deploy
   allow_failures:
     - env:
         TEST_TYPE: integration
