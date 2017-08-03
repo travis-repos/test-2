@@ -5,9 +5,9 @@ env:
   - MODULE=npm
   - MODULE=actions
 
+script: echo script
+
 jobs:
   include:
-  - stage: test
-    script: echo script
   - stage: deploy
     script: echo deploy
