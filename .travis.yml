@@ -1,13 +1,25 @@
 sudo: false
 
-env:
-  matrix:
-  - MODULE=npm
-  - MODULE=actions
+language: node_js
+node_js:
+  - "7.9.0"
 
-script: echo script
+install:
+  - npm install yarn codecov -g
+  - yarn
 
 jobs:
   include:
-  - stage: deploy
-    script: echo deploy
+    - stage: test
+      env:
+        TEST_TYPE: unit
+      script: echo "yarn test:report"
+    - env:
+        TEST_TYPE: integration
+      script: echo "yarn test:integration"
+    - stage: deploy
+      script: echo deploy
+  allow_failures:
+    - env:
+        TEST_TYPE: integration
+  
