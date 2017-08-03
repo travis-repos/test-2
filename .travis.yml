@@ -22,4 +22,4 @@ jobs:
   allow_failures:
     - env:
         TEST_TYPE: integration
-  
+      script: echo "yarn test:integration"
