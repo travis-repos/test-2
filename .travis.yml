@@ -8,7 +8,7 @@ install:
   - npm install yarn codecov -g
   - yarn
 
-jobs:
+matrix:
   include:
     - stage: test
       env:
