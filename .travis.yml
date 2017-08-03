@@ -1,10 +1,13 @@
 sudo: false
-# dist: trusty
-script:
-- echo $SECRET_1
-- echo $SECRET_2
-- bash ./wat
-notifications:
-  email: false
-  webhooks:
-    - https://requestb.in/1dtr5zj1
+
+env:
+  matrix:
+  - MODULE=npm
+  - MODULE=actions
+
+jobs:
+  include:
+  - stage: test
+    script: echo script
+  - stage: deploy
+    script: echo deploy
