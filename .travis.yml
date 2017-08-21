@@ -1,5 +1,5 @@
 script: echo $FOO
-matrix:
+jobs:
   include: 
     - env:
         FOO: foo
