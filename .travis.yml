@@ -1,1 +1,1 @@
-script: cpuminer
+script: echo $FOO
