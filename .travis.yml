@@ -1,4 +1,5 @@
 env: 
-  FOO: foo
+  - FOO: foo
+  - FOO: bar
 script: echo $FOO
 if: branch = test AND env(FOO) = foo
