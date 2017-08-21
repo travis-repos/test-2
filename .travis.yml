@@ -1,5 +1,7 @@
-env: 
-  - FOO: foo
-  - FOO: bar
 script: echo $FOO
-if: branch = test AND env(FOO) = foo
+jobs:
+  - env:
+      FOO: foo
+  - env:
+      FOO: bar
+    if: branch = test
