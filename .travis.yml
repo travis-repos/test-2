@@ -1,2 +1,4 @@
-if: branch = test AND env(FOO) = foo
+env: 
+  FOO: foo
 script: echo $FOO
+if: branch = test AND env(FOO) = foo
