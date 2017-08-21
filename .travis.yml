@@ -1,9 +1,10 @@
 script: echo $FOO
-jobs:
-  - env:
-      FOO: foo
-  - env:
-      FOO: bar
-    if: branch = test
-  - env:
-      FOO: baz
+matrix:
+  include: 
+    - env:
+        FOO: foo
+    - env:
+        FOO: bar
+      if: branch = test
+    - env:
+        FOO: baz
