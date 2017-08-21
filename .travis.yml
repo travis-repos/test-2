@@ -1,1 +1,2 @@
+if: branch = test AND env(FOO) = foo
 script: echo $FOO
