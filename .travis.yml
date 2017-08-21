@@ -5,3 +5,5 @@ jobs:
   - env:
       FOO: bar
     if: branch = test
+  - env:
+      FOO: baz
