@@ -1,3 +1,7 @@
+stages:
+  - name: one
+    if: branch = main
+  - name: two
 jobs:
   include:
     - stage: one
