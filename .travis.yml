@@ -7,3 +7,4 @@ matrix:
     - stage: one
     - stage: one
     - stage: two
+script: echo FOO
