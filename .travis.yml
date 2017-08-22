@@ -1,4 +1,3 @@
-script: echo $FOO
 stages:
   - before
   - test
@@ -10,3 +9,6 @@ jobs:
   include:
     - stage: before
     - stage: after
+  allow_failures:
+    - rvm: 2.3
+script: "if [\"$(ruby -v)\" =~ 2.3]; then; /bin/false; else; /bin/true; fi"
