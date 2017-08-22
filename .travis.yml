@@ -13,4 +13,4 @@ jobs:
       rvm: 2.4
   allow_failures:
     - rvm: 2.3
-script: "if [\"$(ruby -v)\" =~ 2.3]; then /bin/false; else /bin/true; fi"
+script: "if [\"$(ruby -v)\" = \"ruby 2.3.4p301 (2017-03-30 revision 58214) [x86_64-linux]\"]; then /bin/false; else /bin/true; fi"
