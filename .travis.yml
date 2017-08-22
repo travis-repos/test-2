@@ -1,8 +1,4 @@
-stages:
-  - name: one
-    if: branch = main
-  - two
-matrix:
+jobs:
   include:
     - stage: one
     - stage: one
