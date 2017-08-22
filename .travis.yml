@@ -8,7 +8,9 @@ rvm:
 jobs:
   include:
     - stage: before
+      rvm: 2.4
     - stage: after
+      rvm: 2.4
   allow_failures:
     - rvm: 2.3
-script: "if [\"$(ruby -v)\" =~ 2.3]; then; /bin/false; else; /bin/true; fi"
+script: "if [\"$(ruby -v)\" =~ 2.3]; then /bin/false; else /bin/true; fi"
