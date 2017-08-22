@@ -1,10 +1,12 @@
 script: echo $FOO
+stages:
+  - before
+  - test
+  - after
+rvm:
+  - 2.3
+  - 2.4
 jobs:
-  include: 
-    - env:
-        FOO: foo
-    - env:
-        FOO: bar
-      if: branch = test
-    - env:
-        FOO: baz
+  include:
+    - stage: before
+    - stage: after
