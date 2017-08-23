@@ -1,11 +1,12 @@
 stages:
   - name: one
-    if: branch = main
+    if: branch = test
   - name: two
 jobs:
   include:
     - stage: one
-    - stage: one
     - stage: two
     - stage: two
+    - stage: two
+      if: branch = test
 script: echo FOO
