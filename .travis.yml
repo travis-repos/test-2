@@ -7,4 +7,5 @@ jobs:
     - stage: one
     - stage: one
     - stage: two
+    - stage: two
 script: echo FOO
