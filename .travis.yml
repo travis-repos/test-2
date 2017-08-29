@@ -1,11 +1,6 @@
 matrix:
   include:
     - stage: one
-      env: FOO=0
-    - env: FOO=1
-    - env: FOO=2
-    - env: FOO=3
-    - env: FOO=4
       script: false
     - stage: two
 
