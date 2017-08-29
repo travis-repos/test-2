@@ -1,7 +1,7 @@
 matrix:
   include:
     - stage: one
-      script: false
+    - script: false
     - stage: two
 
 script: echo FOO
