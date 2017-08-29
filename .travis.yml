@@ -6,6 +6,7 @@ matrix:
     - env: FOO=2
     - env: FOO=3
     - env: FOO=4
+      script: false
     - stage: two
 
 script: echo FOO
