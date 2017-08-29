@@ -4,9 +4,11 @@ rvm:
   - '2.4.0'
   - '2.4'
 
-script: echo foo
-
 jobs:
   include:
-    - stage: foo
+    - stage: test
+      script: echo foo
+    - stage: test
       script: echo bar
+    - stage: deploy
+      script: baz
