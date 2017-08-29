@@ -4,7 +4,9 @@ rvm:
   - '2.4.0'
   - '2.4'
 
+script: echo foo
+
 jobs:
   include:
     - stage: foo
-      script: echo foo
+      script: echo bar
