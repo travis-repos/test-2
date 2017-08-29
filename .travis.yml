@@ -6,4 +6,5 @@ rvm:
 
 jobs:
   include:
-    - script: echo foo
+    - stage: test
+      script: echo foo
