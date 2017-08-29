@@ -1,14 +1,7 @@
 language: ruby
 
-rvm:
-  - '2.4.0'
-  - '2.4'
+rvm: '2.4'
 
 jobs:
   include:
-    - stage: test
-      script: echo foo
-    - stage: test
-      script: echo bar
-    - stage: deploy
-      script: baz
+    - script: echo foo
