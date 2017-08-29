@@ -1,12 +1,13 @@
-rvm: '2.4'
-
+language: ruby
+rvm:
+  - '2.2'
+  - '2.3'
+env:
+  - FOO=1
+  - FOO=2
+matrix:
+  foo: true
 jobs:
   include:
-    - stage: test
-      script: echo foo
-    - stage: test
-      script: echo bar
-    - stage: deploy
-      script: echo baz
-    - stage: nonsensical
-      script: true
+    - stage: w00t!
+      script: echo true
