@@ -1,6 +1,13 @@
+language: ruby
+rvm:
+  - '2.2'
+  - '2.3'
+env:
+  - FOO=1
+  - FOO=2
 matrix:
+  foo: true
+jobs:
   include:
-    - script: false
-    - script: true
-
-script: echo FOO
+    - stage: w00t!
+      script: echo true
