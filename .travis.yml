@@ -1,10 +1,12 @@
-language: ruby
-
 rvm: '2.4'
 
 jobs:
   include:
     - stage: test
       script: echo foo
-    - stage: foo
+    - stage: test
       script: echo bar
+    - stage: deploy
+      script: echo baz
+    - stage: nonsensical
+      script: true
