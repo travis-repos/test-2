@@ -1,19 +1,11 @@
 matrix:
   include:
-    - stage: alpha
-
-    - stage: bravo
+    - stage: one
       env: FOO=0
     - env: FOO=1
     - env: FOO=2
     - env: FOO=3
     - env: FOO=4
-    - env: FOO=5
-    - env: FOO=6
-    - env: FOO=7
-    - env: FOO=8
-    - env: FOO=9
-
-    - stage: charlie
+    - stage: two
 
 script: echo FOO
