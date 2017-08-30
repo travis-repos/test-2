@@ -2,12 +2,10 @@ language: ruby
 rvm:
   - '2.2'
   - '2.3'
-env:
-  - FOO=1
-  - FOO=2
-matrix:
-  foo: true
+script: echo script
+after_success: echo after_success
 jobs:
   include:
     - stage: w00t!
-      script: echo true
+      script: echo script
+      after_success: skip
