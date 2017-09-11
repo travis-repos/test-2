@@ -1,11 +1,13 @@
-language: ruby
-rvm:
-  - '2.2'
-  - '2.3'
-script: echo script
-after_success: echo after_success
+stages:
+  - compile
+  - test
+  - deploy
+env:
+  - FOO=one
+  - FOO=two
 jobs:
   include:
-    - stage: w00t!
-      script: echo script
-      after_success: skip
+    - stage: compile
+      script: ./compile
+    - stage: deploy
+      script: ./deploy
