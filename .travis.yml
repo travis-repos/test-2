@@ -5,9 +5,10 @@ stages:
 env:
   - FOO=one
   - FOO=two
+script: echo test
 jobs:
   include:
     - stage: compile
-      script: ./compile
+      script: echo compile
     - stage: deploy
-      script: ./deploy
+      script: echo deploy
