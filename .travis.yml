@@ -1,3 +1,5 @@
+sudo: false
+dist: trusty
 script: echo test
 if: branch =~ ^master$
 
