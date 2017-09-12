@@ -4,6 +4,8 @@ stages:
 
 jobs:
   include:
+    - stage: compile
+      script: echo compile
     - stage: test
       script: echo test
     - stage: deploy
