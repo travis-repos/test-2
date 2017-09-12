@@ -1,7 +1,3 @@
-stages:
-  - name: deploy
-    if: branch = wat
-
 jobs:
   include:
     - stage: compile
@@ -10,3 +6,4 @@ jobs:
       script: echo test
     - stage: deploy
       script: echo deploy
+      if: branch = master
