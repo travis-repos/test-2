@@ -6,4 +6,4 @@ jobs:
       script: echo test
     - stage: deploy
       script: echo deploy
-      if: branch = master
+      if: branch = wat
