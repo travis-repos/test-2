@@ -1,8 +1,6 @@
-script: echo test
-
 stages:
   - name: deploy
-    if: branch = master
+    if: branch = wat
 
 jobs:
   include:
