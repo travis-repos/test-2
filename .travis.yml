@@ -1,9 +1,14 @@
+env:
+  - FOO=one
+  - FOO=two
+script: echo test
+stages:
+  - compile
+  - test
+  - deploy
 jobs:
   include:
     - stage: compile
       script: echo compile
-    - stage: test
-      script: echo test
     - stage: deploy
       script: echo deploy
-      if: branch = wat
