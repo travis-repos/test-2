@@ -1,3 +1,12 @@
 script: echo test
-if: type IN (api)
 
+stages:
+  - name: deploy
+    if: branch = master
+
+jobs:
+  include:
+    - stage: test
+      script: echo test
+    - stage: deploy
+      script: echo deploy
