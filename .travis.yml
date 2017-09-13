@@ -1,14 +1,2 @@
-env:
-  - FOO=one
-  - FOO=two
 script: echo test
-stages:
-  - compile
-  - test
-  - deploy
-jobs:
-  include:
-    - stage: compile
-      script: echo compile
-    - stage: deploy
-      script: echo deploy
+if: type IN (api)
