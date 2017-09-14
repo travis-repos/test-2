@@ -1,17 +1,10 @@
-dist: trusty
-sudo: false
-language: python
-
 stages:
-  - name: Test
-  - name: Deploy
-    if: tag IS present
+  - name: deploy
+    if: branch = wat
 
 jobs:
   include:
-  - python: 3.5
-  - python: 3.6
-  - stage: Deploy
-    script: echo deploy
-
-script: echo test
+    - stage: test
+      script: echo test
+    - stage: deploy
+      script: echo deploy
