@@ -1,6 +1,8 @@
 stages:
   - name: deploy
-    if: branch = wat
+    if: >-
+        tag =~ ^(0|[1-9]\d*)(?:\.(0|[1-9]\d*))?(?:\.(0|[1-9]\d*))?(?:-([\w.-]+))?(?:\+([\w.-]+))?$ AND
+        type IN (push, api)
 
 jobs:
   include:
