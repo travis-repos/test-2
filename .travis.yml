@@ -1,16 +1,6 @@
-stages:
-  - name: deploy
-    if: >-
-        tag =~ ^(0|[1-9]\d*)(?:\.(0|[1-9]\d*))?(?:\.(0|[1-9]\d*))?(?:-([\w.-]+))?(?:\+([\w.-]+))?$ AND
-        type IN (push, api)
-
 jobs:
   include:
-    - stage: preflight
-      script: echo preflight
-    - stage: test
-      script: echo test 1
-    - stage: test
-      script: echo test 2
-    - stage: deploy
-      script: echo deploy
+    - script: echo preflight
+    - script: echo test 1
+    - script: echo test 2
+    - script: echo deploy
