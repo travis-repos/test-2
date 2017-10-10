@@ -1,5 +1,1 @@
-
-jobs:
-  include:
-    - stage: one
-      script: echo one
+script: echo foo
