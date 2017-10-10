@@ -1,7 +1,3 @@
-stages:
-  - one
-  - name: two
-    if: fork = false
 
 jobs:
   include:
