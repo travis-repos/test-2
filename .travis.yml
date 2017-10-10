@@ -1,7 +1,7 @@
 stages:
   - one
   - name: two
-    if: branch = master
+    if: repo = svenfuchs/test-2
 
 jobs:
   include:
