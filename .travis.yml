@@ -1,6 +1,6 @@
 stages:
   - one
-  - two
+  - name: two
     if: fork = false
 
 jobs:
