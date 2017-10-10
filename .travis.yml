@@ -1,7 +1,7 @@
 stages:
   - one
   - name: two
-    if: fork IS true
+    if: fork = true
 
 jobs:
   include:
