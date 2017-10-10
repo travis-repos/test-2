@@ -1,7 +1,7 @@
 stages:
   - one
   - name: two
-    if: fork = false
+    if: branch = master
 
 jobs:
   include:
