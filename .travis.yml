@@ -1,7 +1,7 @@
 stages:
   - one
   - name: two
-    if: repo = svenfuchs/test-2
+    if: head_repo IS blank
 
 jobs:
   include:
