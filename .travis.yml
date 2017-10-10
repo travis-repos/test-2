@@ -7,5 +7,3 @@ jobs:
   include:
     - stage: one
       script: echo one
-    - stage: two
-      script: echo two
