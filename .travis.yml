@@ -1,7 +1,7 @@
 stages:
   - one
   - name: two
-    if: head_repo IS blank
+    if: fork IS true
 
 jobs:
   include:
