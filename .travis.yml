@@ -7,7 +7,7 @@ install:
 - echo "true"
 
 env:
-- TRAVIS_API_TYPE=
+- TRAVIS_API_TYPE=nightly
 jobs:
   include:
   - stage: deploy_test
