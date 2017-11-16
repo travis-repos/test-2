@@ -1,1 +1,23 @@
-script: echo foo
+
+language: ruby
+dist: trusty
+rvm:
+- 2.2.5
+install:
+- echo "true"
+
+env:
+- TRAVIS_API_TYPE=
+jobs:
+  include:
+  - stage: deploy_test
+    script:
+    - echo "deploy_test before install"
+  - stage: nightly
+    script:
+    - echo "bundle exec rspec spec"
+stages:
+- name: deploy_test
+  if: env(TRAVIS_API_TYPE) IS blank
+- name: nightly
+  if: env(TRAVIS_API_TYPE)=nightly
