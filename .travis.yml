@@ -1,5 +1,4 @@
-language: ruby
-dist: trusty
+sudo: false
 install: echo "true"
 script: 'echo wat: $WAT'
 env:
