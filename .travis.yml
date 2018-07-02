@@ -3,7 +3,7 @@ script:
 - echo '#!/bin/bash' >> job.sh
 - echo set -x >> job.sh
 - echo set -e >> job.sh
-- echo $SHELL >> job.sh
+- echo 'echo $SHELL' >> job.sh
 - echo false >> job.sh
 - echo true >> job.sh
 - chmod +x job.sh
