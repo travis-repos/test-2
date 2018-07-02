@@ -1,8 +1,8 @@
 sudo: false
 script:
 - echo '!#/bin/bash' >> job.sh
-- set -e >> job.sh
-- false
-- true
+- echo set -e >> job.sh
+- echo false >> job.sh
+- echo true >> job.sh
 - chmod +x job.sh
 - ./job.sh
