@@ -1,6 +1,6 @@
 sudo: false
 script:
-- echo '!#/bin/bash' >> job.sh
+- echo '#!/bin/bash' >> job.sh
 - echo set -e >> job.sh
 - echo false >> job.sh
 - echo true >> job.sh
