@@ -1,17 +1,2 @@
-jobs:
-  include:
-   - name: "default linux"
-     os: linux
-     script: echo "default"
-   - name: "sudo required"
-     sudo: required
-     os: linux
-     script: echo "required"
-   - name: "sudo false"
-     sudo: false
-     os: linux
-     script: echo "false"
-
-env:
-  global:
-    secure: DtO+08nmblX1s0j/Clri+2p+EA9mN/E/MEn7cUovj2ArhSNqe5K7sLAcwN8YhvsU+ra8Krm/W+Gh4vkxtkLFUN05BsrbLckfDRarmntBV0wt1Gg9R9XiLjlwKtZwvz4f/g1VO23dFKZcHq5e9P0h3eT3CsTj8jG2ZDv0dB6cCOSZx8JckSztcRARmjVCcZ1HrFEG6KbAewftxJP4OmGLAi651YOkgNAHWwfHQc81PgCECLR6mnA8/P78cvFCUY4JUnPZYpDOS0qjK+O4l8vsUnm/1+IILDernQP145B0oL8OkMltqK3iOMLo4X4uVm30twdKzMc9T9N94LYavOIkXiV6/5K9WMoFr4wdpLe4Mla1MVJQN2UuLZ3ufubacl6X+UI20O4wLA93Xc9GrGeQLYCpYxRa4Hg4OVBjv+ypIOV9qwLeD5DxdaUu1+pZZ8ajrb9cbc+bRr6aEFHPzHFLjUc3pC9W5MaxzghgI4Wh52kFTQVx5FZSo3DMOR8MNrkshkmSe+meKQZ+jOw+HbkI0CS3lGT+NlPXJMfA+s/baIAtEros5+qasnPJ0jHFMcwpfoMBfRP+6PEGi9WJ9+f4knxwwNo/fLBgY6QEJa8YtRetb7snZrQOFkpYAWCyfz+aW83bZgYiMbBEJLi0/CigFH2El3a/nc+R7I4F/E9ho80=
+import: 
+- source: svenfuchs/test:one.yml
