@@ -1,2 +1,3 @@
-import: 
-- source: svenfuchs/test:one.yml
+language: shell
+import: travis-pro/test-project:one.yml@sf-import
+script: echo $SECRET
