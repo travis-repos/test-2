@@ -1,3 +1,7 @@
 language: shell
-import: travis-pro/test-project:one.yml@sf-import
-script: echo $SECRET
+jobs:
+  - name: one
+    script: echo one
+  - name: two
+    script: echo two
+    if: fork = false
