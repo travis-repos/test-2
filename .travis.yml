@@ -1,4 +1,7 @@
 language: shell
+import:
+- one.yml
+- 'travis-ci/test-2:other.yml'
 jobs:
   - name: one
     script: echo one
